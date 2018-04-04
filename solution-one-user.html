@@ -12244,14 +12244,14 @@ Vocab words :  19745
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">dwCount</span><span class="o">=</span><span class="n">dfNPH</span><span class="o">.</span><span class="n">words</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 <span class="n">dictionaryU1WithCount</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">dwCount</span><span class="p">)</span>
 <span class="n">dictionaryU1WithCount</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Count&quot;</span><span class="p">]</span>
 <span class="n">dictionaryU1WithCount</span><span class="p">[</span><span class="s2">&quot;Words&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dictionaryU1WithCount</span><span class="o">.</span><span class="n">index</span>
-<span class="n">vis</span> <span class="o">=</span> <span class="n">dictionaryU1WithCount</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span><span class="s1">&#39;Words&#39;</span><span class="p">],</span><span class="n">ascending</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span><span class="kc">True</span><span class="p">])</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">vis</span> <span class="o">=</span> <span class="n">dictionaryU1WithCount</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span><span class="s1">&#39;Words&#39;</span><span class="p">],</span><span class="n">ascending</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span><span class="kc">True</span><span class="p">])</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">vis</span>
 </pre></div>
 
@@ -12265,7 +12265,7 @@ Vocab words :  19745
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -12342,6 +12342,56 @@ Vocab words :  19745
       <th>mobile</th>
       <td>176</td>
       <td>mobile</td>
+    </tr>
+    <tr>
+      <th>gsm</th>
+      <td>175</td>
+      <td>gsm</td>
+    </tr>
+    <tr>
+      <th>cell</th>
+      <td>162</td>
+      <td>cell</td>
+    </tr>
+    <tr>
+      <th>verizon</th>
+      <td>146</td>
+      <td>verizon</td>
+    </tr>
+    <tr>
+      <th>amp</th>
+      <td>133</td>
+      <td>amp</td>
+    </tr>
+    <tr>
+      <th>galaxy</th>
+      <td>133</td>
+      <td>galaxy</td>
+    </tr>
+    <tr>
+      <th>lg</th>
+      <td>128</td>
+      <td>lg</td>
+    </tr>
+    <tr>
+      <th>4g</th>
+      <td>127</td>
+      <td>4g</td>
+    </tr>
+    <tr>
+      <th>mp</th>
+      <td>123</td>
+      <td>mp</td>
+    </tr>
+    <tr>
+      <th>3g</th>
+      <td>117</td>
+      <td>3g</td>
+    </tr>
+    <tr>
+      <th>sim</th>
+      <td>117</td>
+      <td>sim</td>
     </tr>
   </tbody>
 </table>

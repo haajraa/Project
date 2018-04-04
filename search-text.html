@@ -13904,8 +13904,7 @@ U6    0.00083123873013
 <span class="n">searchdictionaryWithCount</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">searchCount</span><span class="p">)</span>
 <span class="n">searchdictionaryWithCount</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Count&quot;</span><span class="p">]</span>
 <span class="n">searchdictionaryWithCount</span><span class="p">[</span><span class="s2">&quot;Words&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">searchdictionaryWithCount</span><span class="o">.</span><span class="n">index</span>
-<span class="n">vis</span> <span class="o">=</span> <span class="n">searchdictionaryWithCount</span><span class="o">.</span><span class="n">sort_values</span><span class="p">([</span><span class="s1">&#39;Count&#39;</span><span class="p">,</span><span class="s1">&#39;Words&#39;</span><span class="p">],</span><span class="n">ascending</span> <span class="o">=</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span><span class="kc">True</span><span class="p">])</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">searchQ</span> <span class="o">=</span> <span class="n">vis</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()[</span><span class="s2">&quot;Count&quot;</span><span class="p">]</span>
+<span class="n">searchQ</span> <span class="o">=</span> <span class="n">searchdictionaryWithCount</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()[</span><span class="s2">&quot;Count&quot;</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">searchQ</span><span class="p">)</span>
 <span class="n">output</span> <span class="o">=</span> <span class="n">searchMethod</span><span class="p">(</span><span class="n">searchQ</span><span class="p">,</span><span class="n">dictionaryUsers</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">output</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
@@ -13926,8 +13925,8 @@ U6    0.00083123873013
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Your search query : Unlock Samsung phone
-{&#39;phone&#39;: 1, &#39;samsung&#39;: 1, &#39;unlock&#39;: 1}
+<pre>Your search query : how to unlock samsung phone
+{&#39;samsung&#39;: 1, &#39;unlock&#39;: 1, &#39;phone&#39;: 1}
 U2    0.432519355476
 U4    0.0753179479501
 U8    0.0610838425174
